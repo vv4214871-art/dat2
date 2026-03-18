@@ -1,0 +1,49 @@
+:root {
+    --bg: #0a0a0a;
+    --gold: #d4af37;
+    --white: #ffffff;
+}
+
+body, html {
+    margin: 0; padding: 0;
+    background-color: var(--bg);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#date-label {
+    position: fixed; top: 30px; left: 30px;
+    color: var(--gold); letter-spacing: 5px; font-size: 0.75rem;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15%;
+    text-align: center;
+}
+
+.content-text {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    font-weight: 300;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1.5s all ease;
+}
+
+.content-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#site-footer {
+    padding: 100px 0;
+    text-align: center;
+    opacity: 0.4;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
